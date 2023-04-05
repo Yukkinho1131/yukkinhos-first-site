@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root 
+{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.cabeçalho 
+{
+    padding: 2% 0% 0% 15%;
+}
+.cabeçalho_navegação
+{
+    display: flex;
+    gap: 80px;
+}
+.cabeçalho_navegação_links
+{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.principal
+{
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+.principal_conteúdo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.principal_conteúdo_título
+{
+    font-size: 2.25rem;
+    font-family: var(--fonte-primaria);
+}
+.destaque
+{
+    color: var(--cor-terciaria);
+}
+.principal_conteúdo_parágrafo
+{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+}
+.principal_conteúdo_links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.principal_conteúdo_links_subtítulo
+{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.principal_conteúdo_links_navegação
+{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+}
+
+.principal_conteúdo_links_navegação:hover
+{
+    background-color: var(--cor-hover);
+}
+
+.principal_imagem
+{
+    width: 50%;
+}
+.rodapé
+{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) 
+{
+    .cabeçalho{
+         padding: 10%;  
+    }
+    .cabeçalho_navegação{
+        justify-content: center;
+    }
+    .principal{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .principal_conteúdo{
+        width: auto;
+    }
+}
